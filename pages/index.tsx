@@ -1,4 +1,4 @@
-import { GetStaticProps } from 'next'
+import { GetServerSideProps } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import About from '../Components/About'
@@ -8,7 +8,6 @@ import Header from '../Components/Header'
 import Hero from '../Components/Hero'
 import Projects from '../Components/Projects'
 import Skills from '../Components/Skills'
-import styles from '../styles/Home.module.css'
 import { Experience, PageInfo, Project, Skill, Social } from '../typings'
 import { fetchExperience } from '../utils/fetchExperiences'
 import { fetchPageInfo } from '../utils/fetchPageInfo'
@@ -71,7 +70,7 @@ export default function Home({pageInfo,experiences,skills,projects,socials}: Pro
 };
 
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
   
   const pageInfo: PageInfo = await fetchPageInfo();
   const experiences: Experience[] = await fetchExperience();
