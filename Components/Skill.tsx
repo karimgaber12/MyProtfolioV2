@@ -5,7 +5,6 @@ import { urlFor } from '../sanity';
 
 type Props = {
   skill: Skill,
-  directionLeft?: boolean
 };
 
 function Skill({directionLeft,skill}: Props) {
@@ -14,7 +13,6 @@ function Skill({directionLeft,skill}: Props) {
       <motion.img 
         className='rounded-full p-4 border border-gray-500 object-cover w-24 h-24 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out'
         initial={{
-          x: directionLeft ? -200 : 200,
           opacity: 0,
         }}
         transition={{
@@ -22,7 +20,6 @@ function Skill({directionLeft,skill}: Props) {
         }}
         whileInView={{
           opacity:1,
-          x:0,
         }}
         src={urlFor(skill?.image).url()}
       />
