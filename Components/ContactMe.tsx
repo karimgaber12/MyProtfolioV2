@@ -29,17 +29,17 @@ function ContactMe({}: Props) {
             <div className='space-y-10'>
                 <div className='flex items-center space-x-5 justify-center'> 
                   <PhoneIcon className='text-[#f7ab0a] h-7 w-7 animate-pulse'/>
-                  <p className='text-2xl'>+201110054682</p>
+                  <p className='text-2xl'>+201013702979</p>
                 </div>
 
                 <div className='flex items-center space-x-5 justify-center'> 
                   <EnvelopeIcon className='text-[#f7ab0a] h-7 w-7 animate-pulse'/>
-                  <p className='text-2xl'>papareact.team@gmail.com</p>
+                  <p className='text-2xl'>karimgaberhd@gmail.com</p>
                 </div>
 
                 <div className='flex items-center space-x-5 justify-center'> 
                   <MapPinIcon className='text-[#f7ab0a] h-7 w-7 animate-pulse'/>
-                  <p className='text-2xl'>123 Developer Lane</p>
+                  <p className='text-2xl'>Egypt/Elminia</p>
                 </div>
             </div>
 
