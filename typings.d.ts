@@ -59,6 +59,7 @@ interface Image {
    }
    
   export interface Project extends SanityBody{
+    LinkToBuild: string | undefined;
       title: string;
      _type: "project";
       image: Image;

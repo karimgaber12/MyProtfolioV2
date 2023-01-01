@@ -14,7 +14,9 @@ function Projects({projects}: Props) {
         <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80'>
            {projects.map((project , i)=>(
             <div key={project._id} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
+              <div className='cursor Preview w-screen snap-center flex flex-col items-center justify-center'>
                 <motion.img
+                className='w-1/3'
                 initial={{
                     y: -300,
                     opacity: 0, 
@@ -25,11 +27,13 @@ function Projects({projects}: Props) {
                  whileInView={{opacity: 1, y: 0 }}
                  viewport={{once: true  }}        
                  src={urlFor(project?.image).url()} alt=''/>
-
+                <a href={project?.LinkToBuild} className="btn-preview bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Preview</a>
+              </div>
                 <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
                     <h4 className='text-4xl font-semibold text-center'>
                        <span className='underline decoration-[#f7ab0a]/50'>{" "} Case Study {i + 1} of {projects.length}:</span>{project?.title}
                     </h4>
+
                     <div className='flex items-center space-x-2 justify-center'>
                        {project?.technologies.map((technology)=>(
                          <img className='h-10 w-10' key={technology._id} src={urlFor(technology.image).url()} alt=""/>
