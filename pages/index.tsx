@@ -60,7 +60,7 @@ export default function Home({pageInfo,experiences,skills,projects,socials}: Pro
     <Link href="#hero">
       <footer className='sticky bottom-5 w-full cursor-pointer'>
         <div className='flex items-center justify-center'>
-          <img className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer' src="https://images.generated.photos/un4SDfIJdIDKnSFo0ZFmOl4gsaQcm4VdolQJTmiNLpA/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDE4MDE2LmpwZw.jpg" alt="" />
+          <img className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer' src="https://cdn.sanity.io/images/x16kspjz/production/c54f64ccf23be1708f4c4ec8f87539a97fbcd75f-612x612.png" alt="" />
         </div>
       </footer>    
     </Link>
